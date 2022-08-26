@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Jenjang;
 use App\Models\Butir;
 use App\Models\Kegiatan;
+use App\Models\Kategori02;
 use Carbon\Carbon;
 
 class DatabaseSeeder extends Seeder
@@ -118,6 +119,140 @@ class DatabaseSeeder extends Seeder
             'jab_id' => 'AH',
             'jen_jenjang' => 'Pranata  Komputer Ahli Utama',
             'jen_slug' => 'pranata-komputer-ahli-utama'
+        ]);
+
+        //Kategori 2    
+        Kategori02::create([
+            'kat02_id' => '01A',
+            'kategori01_id' => '01',
+            'kat02_kategori' => 'Manajemen Layanan TI',
+            'kat02_slug' => 'manajemen-layanan-ti'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '01B',
+            'kategori01_id' => '01',
+            'kat02_kategori' => 'Pengelolaan Data (Data Management)',
+            'kat02_slug' => 'pengelolaan-data-manajemen'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '01C',
+            'kategori01_id' => '01',
+            'kat02_kategori' => 'Audit TI',
+            'kat02_slug' => 'audit-it'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '02A',
+            'kategori01_id' => '02',
+            'kat02_kategori' => 'Sistem Jaringan Komputer',
+            'kat02_slug' => 'sistem-jaringan-komputer'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '02B',
+            'kategori01_id' => '02',
+            'kat02_kategori' => 'Manajemen Infrastruktur TI',
+            'kat02_slug' => 'manajemen-infrastruktur-it'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '03A',
+            'kategori01_id' => '03',
+            'kat02_kategori' => 'Sistem Informasi',
+            'kat02_slug' => 'sistem-informasi'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '03B',
+            'kategori01_id' => '03',
+            'kat02_kategori' => 'Pengolahan Data',
+            'kat02_slug' => 'pengolahan-data'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '03C',
+            'kategori01_id' => '03',
+            'kat02_kategori' => 'Area TI Special/Khusus',
+            'kat02_slug' => 'area-ti-special-khusus'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '04A',
+            'kategori01_id' => '04',
+            'kat02_kategori' => 'Perolehan Ijazah/gelar pendidikan formal sesuai dengan bidang tugas Jabatan Fungsional Pranata Komputer',
+            'kat02_slug' => 'perolehan-ijazah-gelar-pendidikan-formal-sesuai-dengan-bidang-tugas-jabatan-fungsional-pranata-komputer'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '04B',
+            'kategori01_id' => '04',
+            'kat02_kategori' => 'Pembuatan Karya Tulis/Karya Imiah di Bidang Teknologi Informasi Berbasis Komputer',
+            'kat02_slug' => 'pembuatan-karya-tulis-karya-imiah-di-bidang-teknologi-informasi-berbasis-komputer'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '04C',
+            'kategori01_id' => '04',
+            'kat02_kategori' => 'Penerjemahan/Penyaduran Buku dan Bahan bahan Lain di Bidang Teknologi Informasi Berbasis Komputer',
+            'kat02_slug' => 'Penerjemahan-penyaduran-buku-dan-bahan-bahan-lain-di-bidang-teknologi-informasi-berbasis-komputer'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '04D',
+            'kategori01_id' => '04',
+            'kat02_kategori' => 'Penyusunan Standar/Pedoman/Petunjuk Pelaksanaan/Petunjuk Teknis di Bidang Teknologi Informasi Berbasis Komputer',
+            'kat02_slug' => 'penyusunan-standar/pedoman/petunjuk-pelaksanaan/petunjuk-teknis-di-bidang-teknologi-informasi-berbasis-komputer'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '04E',
+            'kategori01_id' => '04',
+            'kat02_kategori' => 'Pengembangan Kompetensi di Bidang Teknologi Informasi Berbasis Komputer',
+            'kat02_slug' => 'pengembangan-kompetensi-di-bidang-teknologi-informasi-berbasis-komputer'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '04F',
+            'kategori01_id' => '04',
+            'kat02_kategori' => 'Kegiatan lain yang mendukung pengembangan profesi yang ditetapkan oleh Instansi Pembina',
+            'kat02_slug' => 'kegiatan-lain-yang-mendukung-pengembangan-profesi-yang-ditetapkan-oleh-instansi-pembina'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '05A',
+            'kategori01_id' => '05',
+            'kat02_kategori' => 'Pengajar/Pelatih di bidang teknologi informasi berbasis komputer',
+            'kat02_slug' => 'pengajar-pelatih-di-bidang-teknologi-informasi-berbasis-komputer'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '05B',
+            'kategori01_id' => '05',
+            'kat02_kategori' => 'Keanggotaan dalam Tim Penilai /Tim Uji Kompetensi',
+            'kat02_slug' => 'keanggotaan-dalam-tim-penilai-tim-uji-kompetensi'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '05C',
+            'kategori01_id' => '05',
+            'kat02_kategori' => 'Perolehan Penghargaan/Tanda Jasa',
+            'kat02_slug' => 'perolehan-penghargaan-tanda-jasa'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '05D',
+            'kategori01_id' => '05',
+            'kat02_kategori' => 'Perolehan Gelar Kesarjanaan Lainnya',
+            'kat02_slug' => 'perolehan-gelar-kesarjanaan-lainnya'
+        ]);
+
+        Kategori02::create([
+            'kat02_id' => '05E',
+            'kategori01_id' => '05',
+            'kat02_kategori' => 'Pelaksanaan Tugas Lain yang Mendukung Pelaksanaan Tugas Pranata Komputer',
+            'kat02_slug' => 'pelaksanaan-tugas-lainnya-yang-mendukung-pelaksanaan-tugas-pranata-komputer'
         ]);
     }
 }

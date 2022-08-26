@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardKegiatanController;
+use App\Http\Controllers\DashboardButirsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,5 @@ Route::post('/register', [RegisterController::class, 'store']);
 // halaman dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 Route::resource('/dashboard/kegiatans', DashboardKegiatanController::class)->middleware('auth');
+Route::get('/dashboard/butirs/checkSlug', [DashboardButirsController::class, 'checkSlug'])->middleware('auth');
+Route::resource('/dashboard/butirs', DashboardButirsController::class)->middleware('auth');

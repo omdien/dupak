@@ -13,6 +13,12 @@
             Kegiatan
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {{ Request::is('dashboard/butirs') ? 'active' : '' }}" href="/dashboard/butirs">
+            <span data-feather="trello"></span>
+            Butir Kegiatan
+          </a>
+        </li>
       </ul>
     </div>
 </nav>
