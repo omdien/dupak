@@ -6,6 +6,8 @@ use App\Models\butir;
 use App\Models\Kategori02;
 use App\Models\Jenjang;
 use Illuminate\Http\Request;
+use Cviebrock\EloquentSluggable\Services\SlugService;
+use Illuminate\Support\Str;
 
 class DashboardButirsController extends Controller
 {
@@ -147,8 +149,7 @@ class DashboardButirsController extends Controller
 
     public function checkSlug(Request $request)
     {
-        dd($request);
         $but_slug = SlugService::createSlug(Butir::class, 'but_slug', $request->but_kegiatan);
-        return response()->json(['but_slug => $but_slug']);
+        return response()->json(['but_slug' => $but_slug]);
     }
 }

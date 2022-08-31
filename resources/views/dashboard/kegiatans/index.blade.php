@@ -21,7 +21,7 @@
                   @foreach ($kegiatans as $kegiatan)
                   <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $kegiatan->butir->but_id }}</td>
+                    {{-- <td>{{ $kegiatan->butir->but_id }}</td> --}}
                     <td>{{ $kegiatan->keg_nama }}</td>
                     <td>{{ $kegiatan->keg_tgl }}</td>
                     <td>

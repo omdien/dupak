@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('but_id');
             $table->string('but_kegiatan');
             $table->string('but_slug')->unique();
+            $table->string('but_excerpt');
+            $table->string('but_key');
             $table->text('but_desc');
             $table->string('but_satuan');
             $table->float('but_kredit');

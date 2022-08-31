@@ -9,8 +9,8 @@
         <form method="post" action="/dashboard/butirs" class="mb-5" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
-                <label for="kegiatan" class="form-label">Butir Kegiatan</label>
-                <input type="text" class="form-control @error('but_kegiatan') is-invalid @enderror" id=" but_kegiatan" name="but_kegiatan" required autofocus value="{{ old('but_kegiatan') }}">
+                <label for="but_kegiatan" class="form-label">Butir Kegiatan</label>
+                <input type="text" class="form-control @error('but_kegiatan') is-invalid @enderror" id="but_kegiatan" name="but_kegiatan" required autofocus value="{{ old('but_kegiatan') }}">
             </div>
             @error('but_kegiatan')
             <div class="invalid-feedback">
@@ -111,20 +111,20 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+    <script>
+        const but_kegiatan = document.querySelector('#but_kegiatan');
+        // console.log(but_kegiatan)
+        const but_slug = document.querySelector('#but_slug');
+        
+        but_kegiatan.addEventListener('change', function() {
+            fetch('/dashboard/butirs/checkSlug?but_kegiatan=' + but_kegiatan.value)
+                .then(response => response.json())
+                .then(data => but_slug.value = data.but_slug)
+        });
+        
+        document.addEventListener('trick-file-accept', function(e) {
+            e.preventDefault();
+        })
+    </script>
 </main>
-<script>
-    const but_kegiatan = document.querySelector('#but_kegiatan');
-    const but_slug = document.querySelector('#but_slug');
-
-    debugger;
-    but_kegiatan.addEventListener('change', function() {
-        fetch('/dashboard/butirs/checkSlug?but_kegiatan=' + but_kegiatan.value)
-            .then(response => response.json())
-            .then(data => but_slug.value = data.but_slug)
-    });
-
-    document.addEventListener('trick-file-accept', function(e) {
-        e.preventDefault();
-    })
-</script>
 @endsection
