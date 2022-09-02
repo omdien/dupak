@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('butir_id');
             $table->foreignId('jenjang_id');
+            $table->foreignId('User_id');
             $table->string('keg_nama');
             $table->string('keg_slug');
             $table->date('keg_tgl');

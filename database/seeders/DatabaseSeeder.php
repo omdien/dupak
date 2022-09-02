@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Jenjang;
+use App\Models\kepangkatan;
 use App\Models\Butir;
 use App\Models\Kegiatan;
 use App\Models\Kategori02;
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
         Kegiatan::create([
             'butir_id' => 1,
             'jenjang_id' => 1,
+            'User_id' => 1,
             'keg_nama' => 'Melakukan Sesuatu yang berguna untuk bangsa dan negara',
             'keg_slug' => 'melakukan-sesuatu-yang-berguna-untuk-bangsa-dan-negara',
             'keg_tgl' => Carbon::parse('02/03/2022'),
@@ -34,6 +36,7 @@ class DatabaseSeeder extends Seeder
         Kegiatan::create([
             'butir_id' => 2,
             'jenjang_id' => 1,
+            'User_id' => 1,
             'keg_nama' => 'Memasang kable jaringan ruangan server',
             'keg_slug' => 'Memasang-kable-jaringan-ruangan-server',
             'keg_tgl' => Carbon::parse('02/05/2022'),
@@ -257,6 +260,93 @@ class DatabaseSeeder extends Seeder
             'kategori01_id' => '05',
             'kat02_kategori' => 'Pelaksanaan Tugas Lain yang Mendukung Pelaksanaan Tugas Pranata Komputer',
             'kat02_slug' => 'pelaksanaan-tugas-lainnya-yang-mendukung-pelaksanaan-tugas-pranata-komputer'
+        ]);
+
+        //Kepangkatan
+        kepangkatan::create([
+            'pangkat' => 'Juru Muda',
+            'golongan' => 'I',
+            'ruang' => 'a',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Juru Muda Tingkat I',
+            'golongan' => 'I',
+            'ruang' => 'b',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Juru',
+            'golongan' => 'I',
+            'ruang' => 'c',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Juru Tingkat I',
+            'golongan' => 'I',
+            'ruang' => 'd',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pengatur Muda',
+            'golongan' => 'II',
+            'ruang' => 'a',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pengatur Muda Tingkat I',
+            'golongan' => 'II',
+            'ruang' => 'b',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pengatur',
+            'golongan' => 'II',
+            'ruang' => 'c',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pengatur Tingkat I',
+            'golongan' => 'II',
+            'ruang' => 'd',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Penata Muda',
+            'golongan' => 'III',
+            'ruang' => 'a',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Penata Muda Tingkat I',
+            'golongan' => 'III',
+            'ruang' => 'b',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Penata',
+            'golongan' => 'III',
+            'ruang' => 'c',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Penata Tingkat I',
+            'golongan' => 'III',
+            'ruang' => 'd',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pembina',
+            'golongan' => 'IV',
+            'ruang' => 'a',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pembina Tingkat I',
+            'golongan' => 'IV',
+            'ruang' => 'b',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pembina Utama Muda',
+            'golongan' => 'IV',
+            'ruang' => 'c',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pembina Utama Madya',
+            'golongan' => 'IV',
+            'ruang' => 'd',
+        ]);
+        kepangkatan::create([
+            'pangkat' => 'Pembina Utama',
+            'golongan' => 'IV',
+            'ruang' => 'e',
         ]);
     }
 }

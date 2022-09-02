@@ -6,6 +6,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardKegiatanController;
 use App\Http\Controllers\DashboardButirsController;
+use App\Http\Controllers\DashboardUsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +38,4 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('aut
 Route::resource('/dashboard/kegiatans', DashboardKegiatanController::class)->middleware('auth');
 Route::get('/dashboard/butirs/checkSlug', [DashboardButirsController::class, 'checkSlug'])->middleware('auth');
 Route::resource('/dashboard/butirs', DashboardButirsController::class)->middleware('auth');
+Route::resource('/dashboard/users', DashboardUsersController::class)->middleware('auth');
