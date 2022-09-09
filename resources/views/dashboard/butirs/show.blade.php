@@ -17,10 +17,71 @@
             @else
             <img src="https://source.unsplash.com/1200x400?{{ $butir->but_key }}" class="card-img-top mt-3" alt="{{ $butir->kategori02->kat02_kategori }}">
             @endif
-            <h6>Batasan Penilaian : {{ $butir->but_batasan}}</h6>
-            <article class="my-3 fs-5">
-                {!! $butir->but_desc !!}
-            </article>
+            <div class="row">
+                <article class="my-3 fs-5">
+                    {!! $butir->but_desc !!}
+                </article>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-3">
+                    <h5>Satuan Hasil :</h5>
+                </div>
+                <div class="col-sm-5">
+                    <article class="fs-5">
+                    {{$butir->but_satuan}}
+                    </article>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-3">
+                    <h5>Angka Kredit :</h5>
+                </div>
+                <div class="col-sm-5">
+                    <article class="fs-5">
+                    {{$butir->but_kredit}}
+                    </article>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-3">
+                    <h5>Batasan Penilaian :</h5>
+                </div>
+                <div class="col-sm-5">
+                    <article class="fs-5">
+                    {{$butir->but_batasan}}
+                    </article>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-3">
+                    <h5>Pelaksana :</h5>
+                </div>
+                <div class="col-sm-5">
+                    <article class="fs-5">
+                    {{$butir->jenjang->jen_jenjang}}
+                    </article>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-3">
+                    <h5>Bukti Fisik :</h5>
+                </div>
+                <div class="col-sm-9">
+                    <article class="fs-5">
+                        {!! $butir->but_fisik !!}
+                    </article>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col-sm-3">
+                    <h5>Contoh :</h5>
+                </div>
+                <div class="col-sm-9">
+                    <article class="fs-5">
+                        {!! $butir->but_contoh !!}
+                    </article>
+                </div>
+            </div>
         </div>
     </div>
 </div>

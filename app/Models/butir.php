@@ -16,6 +16,11 @@ class butir extends Model
     {
         return $this->belongsTo(Kategori02::class);
     }
+    
+    public function jenjang()
+    {
+        return $this->belongsTo(jenjang::class);
+    }
 
     public function getRouteKeyName()
     {
