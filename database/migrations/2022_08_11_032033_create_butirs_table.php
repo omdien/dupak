@@ -23,7 +23,7 @@ return new class extends Migration
             $table->text('but_desc');
             $table->string('but_satuan');
             $table->float('but_kredit');
-            $table->string('but_batasan');
+            $table->text('but_batasan');
             $table->text('but_fisik');
             $table->text('but_contoh');
             $table->foreignId('kategori02_id');

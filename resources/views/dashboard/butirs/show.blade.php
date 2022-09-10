@@ -46,9 +46,9 @@
                 <div class="col-sm-3">
                     <h5>Batasan Penilaian :</h5>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-9">
                     <article class="fs-5">
-                    {{$butir->but_batasan}}
+                    {!! $butir->but_batasan !!}
                     </article>
                 </div>
             </div>

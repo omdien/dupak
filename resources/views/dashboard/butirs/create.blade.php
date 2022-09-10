@@ -78,8 +78,9 @@
                 <input type="text" class="form-control" id="but_kredit" name="but_kredit" value="{{ old('but_kredit') }}">
             </div>
             <div class="mb-3">
-                <label for="batasan" class="form-label">Batasan Penilaian</label>
-                <input type="text" class="form-control" id="but_batasan" name="but_batasan" value="{{ old('but_batasan') }}">
+                <label for="but_batasan" class="form-label">Batasan Penilaian</label>
+                <input id="but_batasan" type="hidden" name="but_batasan" value="{{ old('but_batasan') }}">
+                <trix-editor input="but_batasan"></trix-editor>
             </div>
             <div class="mb-3">
                 <label for="jenjang_id" class="form-label">Pelaksana</label>
