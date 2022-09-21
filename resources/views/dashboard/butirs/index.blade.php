@@ -26,7 +26,7 @@
         @foreach ($butirs as $butir)
         <tr>
           <td>{{ $loop->iteration }}</td>
-          <td>{{ $butir->but_kegiatan }}</td>
+          <td class="col-8">{{ $butir->but_kegiatan }}</td>
           <td>{{ $butir->kategori02->kat02_kategori }}</td>
           <td>
             <a href="/dashboard/butirs/{{ $butir->but_slug }}" class="badge bg-info"><span data-feather="eye"></span></a>

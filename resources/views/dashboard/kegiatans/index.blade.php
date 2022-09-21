@@ -7,7 +7,7 @@
         </div>
         <div class="table-responsive">
             {{-- col-lg-8" --}}
-            <a href="/dashboard/butirs/create" class="btn btn-primary mb-3">Tambah Kegiatan</a>
+            <a href="/dashboard/kegiatans/create" class="btn btn-primary mb-3">Tambah Kegiatan</a>
             <table class="table table-striped table-sm">
               <thead>
                 <tr>

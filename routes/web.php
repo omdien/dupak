@@ -35,7 +35,11 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 // halaman dashboard
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+
+//halaman dashboard kegiatan
 Route::resource('/dashboard/kegiatans', DashboardKegiatanController::class)->middleware('auth');
+
+//halaman dashboard butir kegiatan
 Route::get('/dashboard/butirs/checkSlug', [DashboardButirsController::class, 'checkSlug'])->middleware('auth');
 Route::resource('/dashboard/butirs', DashboardButirsController::class)->middleware('auth');
 Route::resource('/dashboard/users', DashboardUsersController::class)->middleware('auth');

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\kegiatan;
+use App\Models\butir;
+use App\Models\Jenjang;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DashboardKegiatanController extends Controller
@@ -26,7 +29,11 @@ class DashboardKegiatanController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.kegiatans.create', [
+            'butirs' => Butir::all(),
+            'jenjangs' => Jenjang::all(),
+            'users' => User::find(auth()->user()->id)
+        ]);
     }
 
     /**

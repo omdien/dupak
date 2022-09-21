@@ -27,7 +27,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'Didin Handiman',
             'username' => 'omdien',
             'email' => 'omdien@gmail.com',
-            'password' => bcrypt('4rfv5tgb')
+            'password' => bcrypt('4rfv5tgb'),
+            'kepangkatan_id' => 8,
+            'jenjang_id' => 1,
+            'nip' => '197502102009121001'
         ]);
 
         // Kegiatan
