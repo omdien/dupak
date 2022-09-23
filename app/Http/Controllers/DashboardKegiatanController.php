@@ -31,7 +31,7 @@ class DashboardKegiatanController extends Controller
     {
         return view('dashboard.kegiatans.create', [
             'butirs' => Butir::all(),
-            'jenjangs' => Jenjang::all(),
+            'jenjangs' => Jenjang::find(auth()->user()->jenjang_id),
             'users' => User::find(auth()->user()->id)
         ]);
     }
